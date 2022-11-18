@@ -86,7 +86,7 @@ signInButton.onclick = function () {
 
 function loadSongsFromServer() {
     //https://api.jsonbin.io/v3/b/630e7387a1610e638615f299
-    fetch("http://localhost:8080/songs", {credentials: "include"}).then(function (response) {
+    fetch("https://gentle-bayou-67266.herokuapp.com/songs", {credentials: "include"}).then(function (response) {
     // the server has now responded to the request
     // .... 
     if (response.status == 200) {
@@ -262,7 +262,7 @@ function createSongOnServer(name, artist, rating, explicit, time) {
     data += "&time=" + encodeURIComponent(time);
 
 
-    fetch("http://localhost:8080/songs", {
+    fetch("https://gentle-bayou-67266.herokuapp.com/songs", {
         // additional options to the fetch request
         credentials: "include",
         method: "POST",
@@ -290,7 +290,7 @@ function createUser(firstName, lastName, email, password) {
     data += "&password=" + encodeURIComponent(password);
 
     
-    fetch("http://localhost:8080/users", {
+    fetch("https://gentle-bayou-67266.herokuapp.com/users", {
         
         // additional options to the fetch request
         credentials: "include",
@@ -326,7 +326,7 @@ function SignIn(email, password) {
     data += "&password=" + encodeURIComponent(password);
 
 
-    fetch("http://localhost:8080/sessions", {
+    fetch("https://gentle-bayou-67266.herokuapp.com/sessions", {
         // additional options to the fetch request
         credentials: "include",
         method: "POST",
@@ -357,7 +357,7 @@ function SignIn(email, password) {
 }
 
 function deleteSongFromServer(songId) {
-    fetch("http://localhost:8080/songs/" + songId,  {
+    fetch("https://gentle-bayou-67266.herokuapp.com/songs/" + songId,  {
     credentials: "include",
     method: "DELETE"
 
@@ -372,7 +372,7 @@ function updateSongFromServer( name, artist, rating, explicit, time, songId) {
     data += "&explicit=" + encodeURIComponent(explicit);
     data += "&time=" + encodeURIComponent(time);
 
-    fetch("http://localhost:8080/songs/" + songId,  {
+    fetch("https://gentle-bayou-67266.herokuapp.com/songs/" + songId,  {
         credentials: "include",
         method: "PUT",
         headers: {
