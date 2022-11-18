@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+}
+#wrapper {
+    display: flex;
+}
+#input {
+    width: 50vw;
+    min-height: 100vh;
+    padding-top: calc(50vh - 352.38px/2);
+    flex-direction: column;
+    background-color: #f5f5f5;
+    font-family: sans-serif;
+    color: #373737;
+}
+#name-input {
+    padding: 7px;
+    border: none;
+    border: 2px solid #373737; 
+    background-color: #f5f5f5;
+    border-radius: 2px;
+    width: 200px;
+}
+.buttons {
+    margin: 5px;
+    padding: 7px;
+    border: none;
+    border: 2px solid #373737; 
+    background-color: #f5f5f5;
+    border-radius: 2px;
+    width: 200px;
+}
+#name-input:focus-visible {
+    border: none;
+    border: 2px solid #373737; 
+    background-color: #f5f5f5;
+}
+.forms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.submit-buttons {
+    border: none;
+    background-color: rgb(49, 165, 144);
+    margin: 20px;
+    color: #f5f5f5;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.submit-buttons:hover {
+    cursor: pointer;
+    background-color: rgb(37, 147, 126);
+}
+#output {
+    width: 50vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(34, 33, 33);
+    color: #f5f5f5;
+    font-family: sans-serif;
+}
+img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+#playlist {
+    background-color: #373737;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+#song-list {
+    list-style: none;
+    padding: 50px;
+}
+
+.song-name{
+    color: #f5f5f5;
+}
+
+li > div {
+    margin: 5px;
+    color: rgb(206, 206, 206);
+}
+li > div:first-child {
+    font-size: 20px;
+}
+li > button {
+    margin: 5px;
+    border: none;
+    background-color: rgb(128, 128, 128);
+    color: #f5f5f5;
+    padding: 10px;
+    border-radius: 2px;
+}
+.delete:hover {
+    background-color: rgb(213, 67, 67);
+    cursor: pointer;
+}
+.edit:hover {
+    background-color: rgb(113, 113, 113);
+    cursor: pointer;
+}
+#explicit-input {
+    width: auto;
+}
+#edit-explicit-input {
+    width: auto;
+}
+.song-explicit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    font-size: 13px;
+    margin-left: 5px;
+}
+.flexy {
+    display: flex;
+    align-items: center;
+}
+.song-time {
+    margin-left: auto;
+    font-size: 14px;
+}
+.flexy2 {
+    display: flex;
+    align-items: center;
+}
+.song-rating {
+    margin-left: auto;
+    font-size: 14px;
+}
+.sign {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-family: sans-serif;
+}
+.inv {
+    color: red;
+    font-size: 10px;
+}

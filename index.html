@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="authenticate" class="sign">
+            <button class="submit-buttons" id="up">Sign Up</button>
+            <p>or</p>
+            <button class="submit-buttons" id="in">Sign In</button>
+        </div>
+        <div id="sign-in" class="sign">
+            <div class="forms" >
+                <h1>Sign In</h1>
+                <input type="text" class="buttons" id="email-signin" placeholder="Email">
+                <input type="password" class="buttons" id="password-signin" placeholder="Password">
+                <h1 class="inv" id="invalid">Invalid Email or Password</h1>
+                <button class="submit-buttons" id="sign-in-button">Sign In</button>
+            </div>
+        </div>
+        <div id="sign-up" class="sign">
+            <div class="forms" >
+                <h1>Sign Up</h1>
+                <input type="text" class="buttons" id="first-name-signup" placeholder="First Name">
+                <input type="text" class="buttons" id="last-name-signup" placeholder="Last Name">
+                <input type="text" class="buttons" id="email-signup" placeholder="Email">
+                <input type="password" class="buttons" id="password-signup" placeholder="Password">
+                <h1 class="inv" id="invalidSignUp">Invalid Email or Password</h1>
+                <button class="submit-buttons" id="sign-up-button">Sign Up</button>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div id="input">
+                <div class="forms" id="form" >
+                    <h1>Add Your Favorite Songs</h1>
+                    <input type="text" class="buttons" id="name-input" placeholder="Song Title">
+                    <input type="text" class="buttons" id="artist-input" placeholder="Artist">
+                    <input type="number" class="buttons" id="rating-input" placeholder="Rate the song out of 10">
+                    <input type="number" class="buttons" id="time-input" placeholder="Time Range in Seconds">
+                    <div>
+                        <input type="checkbox" class="buttons" id="explicit-input" name="explicit">
+                    <label for="explicit"> Explicit?</label>
+                    </div>
+                    <button class="submit-buttons" id="submit-button">Add Song</button>
+                </div>
+                <div class="forms" id="edit_form" >
+                    <h1 id="title">Add Your Favorite Songs</h1>
+                    <input type="text" class="buttons" id="edit-name-input" placeholder="Song Title">
+                    <input type="text" class="buttons" id="edit-artist-input" placeholder="Artist">
+                    <input type="number" class="buttons" id="edit-rating-input" placeholder="Rate the song out of 10">
+                    <input type="number" class="buttons" id="edit-time-input" placeholder="Time Range in Seconds">
+                    <div>
+                        <input type="checkbox" class="buttons" id="edit-explicit-input" name="explicit">
+                    <label for="explicit"> Explicit?</label>
+                    </div>
+                    <button class="submit-buttons" id="save-button">Save</button>
+                </div>
+                <div class="forms" id="saved" >
+                    <h1 id="title">Your song has been updated!</h1>
+                    <button class="submit-buttons" id="go-back">Add Songs</button>
+                </div>
+            </div>
+            <div id="output">
+                <div id="playlist">
+                    <img src="playlistCover.png" />
+                    <h1 id="usersName">PlayList</h1>
+
+                </div>
+                <ul id="song-list">
+                </ul>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
