@@ -304,7 +304,7 @@ function createUser(firstName, lastName, email, password) {
         console.log("pie")
         // server has responded
         if (response.status == 422) {
-            invalidSignUp.innerHTML = "There is already and account with this username and password";
+            invalidSignUp.innerHTML = "There is already and account with this username";
             console.log("YOU DID NOT DO IT YOU DID NOT CREATE AN ACCOUNT")
 
         } else if (response.status == 201 ) {
